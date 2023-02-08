@@ -1,28 +1,55 @@
 
+
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+
 html{
   scroll-behavior: smooth;
 }
 
 
-body { padding-top: 50px; }
+body { padding-top: 50px;
+    background: radial-gradient(759px at 14% 22.3%, rgb(10, 64, 88) 0%, rgb(15, 164, 102) 90%);
+font-family: 'Russo One', sans-serif;
+}
 @media screen and (max-width: 768px) {
     body { padding-top: 50px; }
 }
 
+.navbar-light .navbar-nav .nav-link {
+    color: greenyellow;
+}
+
+h1, h2, h3, h4 {
+  
+    color: wheat;
+}
 .card-1{
     background: #FFEEEE;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #DDEFBB, #FFEEEE);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #DDEFBB, #FFEEEE); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    
-    
-    
+    background: linear-gradient(to right, #92fe9d 0%, #00c9ff 100%);    
 
     border-radius: 8px;
     width: 700px;
     margin: auto;    
 }
 
-@media(max-width:700px){
+
+.card-2 {
+    background: #FFEEEE;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #DDEFBB, #FFEEEE);  /* Chrome 10-25, Safari 5.1-6 */
+    background: radial-gradient(circle at 10% 20%, rgb(161, 255, 206) 0%, rgb(250, 255, 209) 90%);}
+
+.card-3{
+       background: #FFEEEE;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #DDEFBB, #FFEEEE);  /* Chrome 10-25, Safari 5.1-6 */
+    background: radial-gradient(circle at -8.9% 51.2%, rgb(255, 124, 0) 0%, rgb(255, 124, 0) 15.9%, rgb(255, 163, 77) 15.9%, rgb(255, 163, 77) 24.4%, rgb(19, 30, 37) 24.5%, rgb(19, 30, 37) 66%);    }
+
+.navbar{
+    background: radial-gradient rgb(19, 30, 37) 24.5%; 
+}
+
+
+    @media(max-width:700px){
     .card-1{
       width: auto; 
     }
@@ -322,3 +349,10 @@ body { padding-top: 50px; }
       box-shadow:4px 4px 0 #bbb,8px 8px 0 #ddd;
   }
                         
+  .container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
